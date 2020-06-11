@@ -13,8 +13,8 @@ body{
   background-color: #000;
 }
 
-.logo{
-  background: url(../images/logo2.png);
+div .logo{
+  background: url(../images/logo.jpg);
   top: 20%;
   left: 100px;
   background-size: 400px;
