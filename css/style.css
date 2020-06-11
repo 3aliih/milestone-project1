@@ -4,7 +4,7 @@ body{
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #000;
 }
 
 /* Global */
@@ -203,7 +203,7 @@ header a:hover{
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3),
 #slide4:checked ~ #bullets label:nth-child(4) {
-  background: rgb(0, 0, 0);
+  background: #444;
 }
 @media screen and (max-width: 900px) {
   #slide1:checked ~ #controls label:nth-child(2),
@@ -236,10 +236,10 @@ header a:hover{
 footer{
   padding: 20px;
   margin-top: 20px;
-  color: #000000;
+  color: #ffffff;
   background-color: #5c3434;
-  text-align: left;
+  text-align: center;
   width: 1860px;
-  height: 50px;
+  height: 60px;
 
 }
