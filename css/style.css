@@ -90,7 +90,7 @@ header a:hover{
 /* Slider **/
 #slider {
   margin: auto;
-  margin-top: -300px;
+  margin-top: 300px;
   width: 500px;
   max-width: 100%;
   text-align: center;
@@ -203,7 +203,7 @@ header a:hover{
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3),
 #slide4:checked ~ #bullets label:nth-child(4) {
-  background: #444;
+  background: rgb(0, 0, 0);
 }
 @media screen and (max-width: 900px) {
   #slide1:checked ~ #controls label:nth-child(2),
@@ -222,14 +222,24 @@ header a:hover{
   }
 }
 
+/* From Our **/
+
+.our{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Robot', sans-serif;
+}
+
 /* Footer **/
 footer{
   padding: 20px;
   margin-top: 20px;
-  color: #ffffff;
+  color: #000000;
   background-color: #5c3434;
-  text-align: center;
+  text-align: left;
   width: 1860px;
-  height: 60px;
+  height: 50px;
 
 }
