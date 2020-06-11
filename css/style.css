@@ -118,7 +118,7 @@ footer{
 
 #slider{
   margin: auto;
-  width: 340px;
+  width: 450px;
   max-width: 100%;
   text-align: center;
 }
@@ -187,4 +187,8 @@ footer{
 
 #slides .slide_4{
   background: url(../images/blue.jpg);
+}
+
+#slide-content{
+  margin: 10px;
 }
