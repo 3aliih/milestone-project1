@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emir Even Planner Gallery</title>
+  <title>Emir Even Planner</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -14,51 +14,60 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li class="current"><a href="contactus.html">Contact Us</a></li>
+          <li class="current"><a href="index.html">Home-</a></li>
+          <li><a href="gallery.html">Gallery-</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section class="logo"></section>
+  <div class="logo">
+    <img class="logo" src="logo.png" alt="">
+  </div>
   <section id="showcase">
     <div class="container">
-      <h1>Our Latest Events</h1>
-        <p>Some examples of our latest events</p>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
     </div>
-  </section>
-
-  <section id="newsletter">
-    <div class="container">
-      <h1>For fast contact write your email here:</h1>
-      <form>
-        <input type="email" placeholder="Enter Email...">
-        <button type="submit" class="button_1">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="boxes">
-    <div class="container">
-      <div class="box">
-        <img src="./images/rose.jpg.jpg">
-        <h3>HTML5 Markup</h3>
-        <p>In the gallery page you'll be able to seee more pictures.</p>
-      </div>
-      <div class="box">
-        <img src="./images/blue.jpg.jpg">
-        <h3>CSS3 Styling</h3>
-        <p>In the gallery page you'll be able to seee more pictures.</p>
-      </div>
-      <div class="box">
-        <img src="./images/gold.jpg.jpg">
-        <h3>Graphic Design</h3>
-        <p>In the gallery page you'll be able to seee more pictures.</p>
-      </div>
-    </div>
-  </section>
-
+    <div><p class="our">From Our Latest Events</p></div>
   <footer>
     <p>Aliih Web Design, Copyright &copy; 2020</p>
   </footer>
