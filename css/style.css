@@ -13,7 +13,74 @@ body{
   background-color: #000;
 }
 
-/* Global */
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+
+/* Global ****************************************************************************************/
 .container{
   width: 80%;
   margin: auto;
@@ -419,150 +486,5 @@ footer{
   width: 1863px;
   height: 30px;
 }
-
 /* Birthday **/
 
-#slider {
-  margin: auto;
-  margin-top: 300px;
-  width: 500px;
-  max-width: 100%;
-  text-align: center;
-}
-#slider input[type=radio] {
-  display: none;
-}
-#slider label {
-  cursor:pointer;
-  text-decoration: none;
-}
-#slides {
-  padding: 10px;
-  border: 3px solid #ccc;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-}
-#overflow {
-  width: 100%;
-  overflow: hidden;
-}
-#birthday1:checked ~ #slides .inner {
-  margin-left: 0;
-}
-#birthday2:checked ~ #slides .inner {
-  margin-left: -100%;
-}
-#birthday3:checked ~ #slides .inner {
-  margin-left: -200%;
-}
-#birthday4:checked ~ #slides .inner {
-  margin-left: -300%;
-}
-#birthday5:checked ~ #slides .inner {
-  margin-left: -300%;
-}
-#slides .inner {
-  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  width: 400%;
-  line-height: 0;
-  height: 400px;
-}
-#slides .slide {
-  width: 25%;
-  float:left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
-}
-#slides .birthday1 {
-  background: url(../images/gold.jpg);
-}
-#slides .birthday2 {
-  background: url(../images/red.jpg);
-}
-#slides .birthday3 {
-  background: url(../images/blue.jpg);
-}
-#slides .birthday4 {
-  background: url(../images/rose.jpg);
-}
-#slides .birthday5 {
-  background: url(../images/rose.jpg);
-}
-#controls {
-  margin: -180px 0 0 0;
-  width: 100%;
-  height: 50px;
-  z-index: 3;
-  position: relative;
-}
-#controls label {
-  transition: opacity 0.2s ease-out;
-  display: none;
-  width: 50px;
-  height: 50px;
-  opacity: .4;
-}
-#controls label:hover {
-  opacity: 1;
-}
-#birthday1:checked ~ #controls label:nth-child(2),
-#birthday2:checked ~ #controls label:nth-child(3),
-#birthday3:checked ~ #controls label:nth-child(4),
-#birthday4:checked ~ #controls label:nth-child(5),
-#birthday5:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-  float:right;
-  margin: 0 -50px 0 0;
-  display: block;
-}
-#birthday1:checked ~ #controls label:nth-last-child(2),
-#birthday2:checked ~ #controls label:nth-last-child(3),
-#birthday3:checked ~ #controls label:nth-last-child(4),
-#birthday4:checked ~ #controls label:nth-last-child(5),
-#birthday5:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-  float:left;
-  margin: 0 0 0 -50px;
-  display: block;
-}
-#bullets {
-  margin: 150px 0 0;
-  text-align: center;
-}
-#bullets label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius:100%;
-  background: #ccc;
-  margin: 0 10px;
-}
-#birthday1:checked ~ #bullets label:nth-child(1),
-#birthday1:checked ~ #bullets label:nth-child(2),
-#birthday1:checked ~ #bullets label:nth-child(3),
-#birthday1:checked ~ #bullets label:nth-child(4),
-#birthday1:checked ~ #bullets label:nth-child(5) {
-  background: #444;
-}
-@media screen and (max-width: 900px) {
-  #birthday1:checked ~ #controls label:nth-child(2),
-  #birthday2:checked ~ #controls label:nth-child(3),
-  #birthday3:checked ~ #controls label:nth-child(4),
-  #birthday4:checked ~ #controls label:nth-child(5),
-  #birthday5:checked ~ #controls label:nth-child(1),
-  #birthday1:checked ~ #controls label:nth-last-child(2),
-  #birthday2:checked ~ #controls label:nth-last-child(3),
-  #birthday3:checked ~ #controls label:nth-last-child(4),
-  #birthday4:checked ~ #controls label:nth-last-child(5),
-  #birthday5:checked ~ #controls label:nth-last-child(1) {
-     margin: 0;
-  }
-  #slides {
-     max-width: calc(100% - 140px);
-     margin: 0 auto;
-  }
-}

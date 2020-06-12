@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emir Even Planner</title>
+  <link rel="shortcut icon" href="images/logo.png">
   <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 <body>
   <header>
@@ -26,158 +28,89 @@
   </div>
   <section id="showcase">
     <div class="container">
-      <div id="student">
-        <input type="radio" name="slider" id="student1" checked>
-        <input type="radio" name="slider" id="student2">
-        <input type="radio" name="slider" id="student3">
-        <input type="radio" name="slider" id="student4">
-        <input type="radio" name="slider" id="student5">
-        <div id="slides">
-           <div id="overflow">
-              <div class="inner">
-                 <div class="slide student1">
-                    <div class="slide-content">
-                    </div>
-                 </div>
-                 <div class="slide student2">
-                    <div class="slide-content">
-                    </div>
-                 </div>
-                 <div class="slide student3">
-                    <div class="slide-content">
-                    </div>
-                 </div>
-                 <div class="slide student4">
-                    <div class="slide-content">
-                    </div>
-                 </div>
-                 <div class="slide bstudent5">
-                  <div class="slide-content">
-                  </div>
-               </div>
-              </div>
-           </div>
-        </div>
-        <div id="controls">
-           <label for="student1"></label>
-           <label for="student2"></label>
-           <label for="student3"></label>
-           <label for="student4"></label>
-           <label for="student5"></label>
-        </div>
-        <div id="bullets">
-           <label for="student1"></label>
-           <label for="student2"></label>
-           <label for="student3"></label>
-           <label for="student4"></label>
-           <label for="student5"></label>
-        </div>
-     </div>
+      <h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="blue.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
-    <section id="showcase">
-      <div class="container">
-        <div id="birthday">
-          <input type="radio" name="slider" id="birthday1" checked>
-          <input type="radio" name="slider" id="birthday2">
-          <input type="radio" name="slider" id="birthday3">
-          <input type="radio" name="slider" id="birthday4">
-          <input type="radio" name="slider" id="birthday5">
-          <div id="slides">
-             <div id="overflow">
-                <div class="inner">
-                   <div class="slide birthday1">
-                      <div class="slide-content">
-                      </div>
-                   </div>
-                   <div class="slide birthday2">
-                      <div class="slide-content">
-                      </div>
-                   </div>
-                   <div class="slide birthday3">
-                      <div class="slide-content">
-                      </div>
-                   </div>
-                   <div class="slide birthday4">
-                      <div class="slide-content">
-                      </div>
-                   </div>
-                   <div class="slide birthday5">
-                    <div class="slide-content">
-                    </div>
-                 </div>
-                </div>
-             </div>
-          </div>
-          <div id="controls">
-             <label for="birthday1"></label>
-             <label for="birthday2"></label>
-             <label for="birthday3"></label>
-             <label for="birthday4"></label>
-             <label for="birthday5"></label>
-          </div>
-          <div id="bullets">
-             <label for="birthday1"></label>
-             <label for="birthday2"></label>
-             <label for="birthday3"></label>
-             <label for="birthday4"></label>
-             <label for="birthday5"></label>
-          </div>
-       </div>
-      </div>
-      <section id="showcase">
-        <div class="container">
-          <div id="babyshower">
-            <input type="radio" name="slider" id="babyshower1" checked>
-            <input type="radio" name="slider" id="babyshower2">
-            <input type="radio" name="slider" id="babyshower3">
-            <input type="radio" name="slider" id="babyshower4">
-            <input type="radio" name="slider" id="babyshower5">
-            <div id="slides">
-               <div id="overflow">
-                  <div class="inner">
-                     <div class="slide babyshower1">
-                        <div class="slide-content">
-                        </div>
-                     </div>
-                     <div class="slide babyshower2">
-                        <div class="slide-content">
-                        </div>
-                     </div>
-                     <div class="slide babyshower3">
-                        <div class="slide-content">
-                        </div>
-                     </div>
-                     <div class="slide babyshower4">
-                        <div class="slide-content">
-                        </div>
-                     </div>
-                     <div class="slide babyshower5">
-                      <div class="slide-content">
-                      </div>
-                   </div>
-                  </div>
-               </div>
-            </div>
-            <div id="controls">
-               <label for="babyshower1"></label>
-               <label for="babyshower2"></label>
-               <label for="babyshower3"></label>
-               <label for="babyshower4"></label>
-               <label for="babyshower5"></label>
-            </div>
-            <div id="bullets">
-               <label for="babyshower1"></label>
-               <label for="babyshower2"></label>
-               <label for="babyshower3"></label>
-               <label for="babyshower4"></label>
-               <label for="babyshower5"></label>
-            </div>
-         </div>
-        </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="blue.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="blue.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="gold.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="gold.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="gold.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+    </div>
+  </section>
     <div><p class="our">From Our Latest Events</p></div>
   <footer>
     <p>Aliih Web Design, Copyright &copy; 2020</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
